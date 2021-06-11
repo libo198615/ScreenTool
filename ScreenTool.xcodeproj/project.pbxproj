@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BFD60126636A2600D80E31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD60026636A2600D80E31 /* AppDelegate.m */; };
+		09BFD60426636A2600D80E31 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD60326636A2600D80E31 /* SceneDelegate.m */; };
+		09BFD60726636A2600D80E31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD60626636A2600D80E31 /* ViewController.m */; };
+		09BFD60A26636A2600D80E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BFD60826636A2600D80E31 /* Main.storyboard */; };
+		09BFD60C26636A2900D80E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BFD60B26636A2900D80E31 /* Assets.xcassets */; };
+		09BFD60F26636A2900D80E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BFD60D26636A2900D80E31 /* LaunchScreen.storyboard */; };
+		09BFD61226636A2900D80E31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD61126636A2900D80E31 /* main.m */; };
+		09BFD61C26636A2900D80E31 /* ScreenToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD61B26636A2900D80E31 /* ScreenToolTests.m */; };
+		09BFD62726636A2900D80E31 /* ScreenToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD62626636A2900D80E31 /* ScreenToolUITests.m */; };
+		09BFD63E26636AA400D80E31 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BFD63D26636AA400D80E31 /* ReplayKit.framework */; };
+		09BFD64226636AA400D80E31 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD64126636AA400D80E31 /* SampleHandler.m */; };
+		09BFD64926636AA400D80E31 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BFD63D26636AA400D80E31 /* ReplayKit.framework */; };
+		09BFD64B26636AA400D80E31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BFD64A26636AA400D80E31 /* UIKit.framework */; };
+		09BFD64F26636AA400D80E31 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD64E26636AA400D80E31 /* BroadcastSetupViewController.m */; };
+		09BFD65326636AA400D80E31 /* RecoderSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09BFD64826636AA400D80E31 /* RecoderSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09BFD65626636AA400D80E31 /* Recoder.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09BFD63B26636AA400D80E31 /* Recoder.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09BFD67426636D6800D80E31 /* CBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD67026636D6800D80E31 /* CBTool.m */; };
+		09BFD67526636D6800D80E31 /* GetSimilarity.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BFD67226636D6800D80E31 /* GetSimilarity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09BFD61826636A2900D80E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BFD5F426636A2600D80E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BFD5FB26636A2600D80E31;
+			remoteInfo = ScreenTool;
+		};
+		09BFD62326636A2900D80E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BFD5F426636A2600D80E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BFD5FB26636A2600D80E31;
+			remoteInfo = ScreenTool;
+		};
+		09BFD65126636AA400D80E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BFD5F426636A2600D80E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BFD64726636AA400D80E31;
+			remoteInfo = RecoderSetupUI;
+		};
+		09BFD65426636AA400D80E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BFD5F426636A2600D80E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BFD63A26636AA400D80E31;
+			remoteInfo = Recoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09BFD65D26636AA400D80E31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09BFD65326636AA400D80E31 /* RecoderSetupUI.appex in Embed App Extensions */,
+				09BFD65626636AA400D80E31 /* Recoder.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09BFD5FC26636A2600D80E31 /* ScreenTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BFD5FF26636A2600D80E31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09BFD60026636A2600D80E31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09BFD60226636A2600D80E31 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		09BFD60326636A2600D80E31 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		09BFD60526636A2600D80E31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09BFD60626636A2600D80E31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09BFD60926636A2600D80E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09BFD60B26636A2900D80E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09BFD60E26636A2900D80E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09BFD61026636A2900D80E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BFD61126636A2900D80E31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09BFD61726636A2900D80E31 /* ScreenToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BFD61B26636A2900D80E31 /* ScreenToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenToolTests.m; sourceTree = "<group>"; };
+		09BFD61D26636A2900D80E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BFD62226636A2900D80E31 /* ScreenToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BFD62626636A2900D80E31 /* ScreenToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenToolUITests.m; sourceTree = "<group>"; };
+		09BFD62826636A2900D80E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BFD63B26636AA400D80E31 /* Recoder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Recoder.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BFD63D26636AA400D80E31 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		09BFD64026636AA400D80E31 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		09BFD64126636AA400D80E31 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		09BFD64326636AA400D80E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BFD64826636AA400D80E31 /* RecoderSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RecoderSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BFD64A26636AA400D80E31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09BFD64D26636AA400D80E31 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		09BFD64E26636AA400D80E31 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		09BFD65026636AA400D80E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BFD67026636D6800D80E31 /* CBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTool.m; sourceTree = "<group>"; };
+		09BFD67126636D6800D80E31 /* CBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTool.h; sourceTree = "<group>"; };
+		09BFD67226636D6800D80E31 /* GetSimilarity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSimilarity.m; sourceTree = "<group>"; };
+		09BFD67326636D6800D80E31 /* GetSimilarity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSimilarity.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09BFD5F926636A2600D80E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD61426636A2900D80E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD61F26636A2900D80E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD63826636AA400D80E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD63E26636AA400D80E31 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD64526636AA400D80E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD64926636AA400D80E31 /* ReplayKit.framework in Frameworks */,
+				09BFD64B26636AA400D80E31 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BFD5F326636A2600D80E31 = {
+			isa = PBXGroup;
+			children = (
+				09BFD5FE26636A2600D80E31 /* ScreenTool */,
+				09BFD61A26636A2900D80E31 /* ScreenToolTests */,
+				09BFD62526636A2900D80E31 /* ScreenToolUITests */,
+				09BFD63F26636AA400D80E31 /* Recoder */,
+				09BFD64C26636AA400D80E31 /* RecoderSetupUI */,
+				09BFD63C26636AA400D80E31 /* Frameworks */,
+				09BFD5FD26636A2600D80E31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09BFD5FD26636A2600D80E31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD5FC26636A2600D80E31 /* ScreenTool.app */,
+				09BFD61726636A2900D80E31 /* ScreenToolTests.xctest */,
+				09BFD62226636A2900D80E31 /* ScreenToolUITests.xctest */,
+				09BFD63B26636AA400D80E31 /* Recoder.appex */,
+				09BFD64826636AA400D80E31 /* RecoderSetupUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09BFD5FE26636A2600D80E31 /* ScreenTool */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD5FF26636A2600D80E31 /* AppDelegate.h */,
+				09BFD60026636A2600D80E31 /* AppDelegate.m */,
+				09BFD60226636A2600D80E31 /* SceneDelegate.h */,
+				09BFD60326636A2600D80E31 /* SceneDelegate.m */,
+				09BFD60526636A2600D80E31 /* ViewController.h */,
+				09BFD60626636A2600D80E31 /* ViewController.m */,
+				09BFD60826636A2600D80E31 /* Main.storyboard */,
+				09BFD60B26636A2900D80E31 /* Assets.xcassets */,
+				09BFD60D26636A2900D80E31 /* LaunchScreen.storyboard */,
+				09BFD61026636A2900D80E31 /* Info.plist */,
+				09BFD61126636A2900D80E31 /* main.m */,
+			);
+			path = ScreenTool;
+			sourceTree = "<group>";
+		};
+		09BFD61A26636A2900D80E31 /* ScreenToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD61B26636A2900D80E31 /* ScreenToolTests.m */,
+				09BFD61D26636A2900D80E31 /* Info.plist */,
+			);
+			path = ScreenToolTests;
+			sourceTree = "<group>";
+		};
+		09BFD62526636A2900D80E31 /* ScreenToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD62626636A2900D80E31 /* ScreenToolUITests.m */,
+				09BFD62826636A2900D80E31 /* Info.plist */,
+			);
+			path = ScreenToolUITests;
+			sourceTree = "<group>";
+		};
+		09BFD63C26636AA400D80E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD63D26636AA400D80E31 /* ReplayKit.framework */,
+				09BFD64A26636AA400D80E31 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09BFD63F26636AA400D80E31 /* Recoder */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD67126636D6800D80E31 /* CBTool.h */,
+				09BFD67026636D6800D80E31 /* CBTool.m */,
+				09BFD67326636D6800D80E31 /* GetSimilarity.h */,
+				09BFD67226636D6800D80E31 /* GetSimilarity.m */,
+				09BFD64026636AA400D80E31 /* SampleHandler.h */,
+				09BFD64126636AA400D80E31 /* SampleHandler.m */,
+				09BFD64326636AA400D80E31 /* Info.plist */,
+			);
+			path = Recoder;
+			sourceTree = "<group>";
+		};
+		09BFD64C26636AA400D80E31 /* RecoderSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				09BFD64D26636AA400D80E31 /* BroadcastSetupViewController.h */,
+				09BFD64E26636AA400D80E31 /* BroadcastSetupViewController.m */,
+				09BFD65026636AA400D80E31 /* Info.plist */,
+			);
+			path = RecoderSetupUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09BFD5FB26636A2600D80E31 /* ScreenTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BFD62B26636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenTool" */;
+			buildPhases = (
+				09BFD5F826636A2600D80E31 /* Sources */,
+				09BFD5F926636A2600D80E31 /* Frameworks */,
+				09BFD5FA26636A2600D80E31 /* Resources */,
+				09BFD65D26636AA400D80E31 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BFD65226636AA400D80E31 /* PBXTargetDependency */,
+				09BFD65526636AA400D80E31 /* PBXTargetDependency */,
+			);
+			name = ScreenTool;
+			productName = ScreenTool;
+			productReference = 09BFD5FC26636A2600D80E31 /* ScreenTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09BFD61626636A2900D80E31 /* ScreenToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BFD62E26636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenToolTests" */;
+			buildPhases = (
+				09BFD61326636A2900D80E31 /* Sources */,
+				09BFD61426636A2900D80E31 /* Frameworks */,
+				09BFD61526636A2900D80E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BFD61926636A2900D80E31 /* PBXTargetDependency */,
+			);
+			name = ScreenToolTests;
+			productName = ScreenToolTests;
+			productReference = 09BFD61726636A2900D80E31 /* ScreenToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09BFD62126636A2900D80E31 /* ScreenToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BFD63126636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenToolUITests" */;
+			buildPhases = (
+				09BFD61E26636A2900D80E31 /* Sources */,
+				09BFD61F26636A2900D80E31 /* Frameworks */,
+				09BFD62026636A2900D80E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BFD62426636A2900D80E31 /* PBXTargetDependency */,
+			);
+			name = ScreenToolUITests;
+			productName = ScreenToolUITests;
+			productReference = 09BFD62226636A2900D80E31 /* ScreenToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		09BFD63A26636AA400D80E31 /* Recoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BFD65A26636AA400D80E31 /* Build configuration list for PBXNativeTarget "Recoder" */;
+			buildPhases = (
+				09BFD63726636AA400D80E31 /* Sources */,
+				09BFD63826636AA400D80E31 /* Frameworks */,
+				09BFD63926636AA400D80E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recoder;
+			productName = Recoder;
+			productReference = 09BFD63B26636AA400D80E31 /* Recoder.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		09BFD64726636AA400D80E31 /* RecoderSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BFD65726636AA400D80E31 /* Build configuration list for PBXNativeTarget "RecoderSetupUI" */;
+			buildPhases = (
+				09BFD64426636AA400D80E31 /* Sources */,
+				09BFD64526636AA400D80E31 /* Frameworks */,
+				09BFD64626636AA400D80E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecoderSetupUI;
+			productName = RecoderSetupUI;
+			productReference = 09BFD64826636AA400D80E31 /* RecoderSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09BFD5F426636A2600D80E31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					09BFD5FB26636A2600D80E31 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					09BFD61626636A2900D80E31 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 09BFD5FB26636A2600D80E31;
+					};
+					09BFD62126636A2900D80E31 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 09BFD5FB26636A2600D80E31;
+					};
+					09BFD63A26636AA400D80E31 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					09BFD64726636AA400D80E31 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 09BFD5F726636A2600D80E31 /* Build configuration list for PBXProject "ScreenTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09BFD5F326636A2600D80E31;
+			productRefGroup = 09BFD5FD26636A2600D80E31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09BFD5FB26636A2600D80E31 /* ScreenTool */,
+				09BFD61626636A2900D80E31 /* ScreenToolTests */,
+				09BFD62126636A2900D80E31 /* ScreenToolUITests */,
+				09BFD63A26636AA400D80E31 /* Recoder */,
+				09BFD64726636AA400D80E31 /* RecoderSetupUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09BFD5FA26636A2600D80E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD60F26636A2900D80E31 /* LaunchScreen.storyboard in Resources */,
+				09BFD60C26636A2900D80E31 /* Assets.xcassets in Resources */,
+				09BFD60A26636A2600D80E31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD61526636A2900D80E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD62026636A2900D80E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD63926636AA400D80E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD64626636AA400D80E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09BFD5F826636A2600D80E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD60726636A2600D80E31 /* ViewController.m in Sources */,
+				09BFD60126636A2600D80E31 /* AppDelegate.m in Sources */,
+				09BFD61226636A2900D80E31 /* main.m in Sources */,
+				09BFD60426636A2600D80E31 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD61326636A2900D80E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD61C26636A2900D80E31 /* ScreenToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD61E26636A2900D80E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD62726636A2900D80E31 /* ScreenToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD63726636AA400D80E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD67526636D6800D80E31 /* GetSimilarity.m in Sources */,
+				09BFD64226636AA400D80E31 /* SampleHandler.m in Sources */,
+				09BFD67426636D6800D80E31 /* CBTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BFD64426636AA400D80E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BFD64F26636AA400D80E31 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09BFD61926636A2900D80E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BFD5FB26636A2600D80E31 /* ScreenTool */;
+			targetProxy = 09BFD61826636A2900D80E31 /* PBXContainerItemProxy */;
+		};
+		09BFD62426636A2900D80E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BFD5FB26636A2600D80E31 /* ScreenTool */;
+			targetProxy = 09BFD62326636A2900D80E31 /* PBXContainerItemProxy */;
+		};
+		09BFD65226636AA400D80E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BFD64726636AA400D80E31 /* RecoderSetupUI */;
+			targetProxy = 09BFD65126636AA400D80E31 /* PBXContainerItemProxy */;
+		};
+		09BFD65526636AA400D80E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BFD63A26636AA400D80E31 /* Recoder */;
+			targetProxy = 09BFD65426636AA400D80E31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09BFD60826636A2600D80E31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BFD60926636A2600D80E31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09BFD60D26636A2900D80E31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BFD60E26636A2900D80E31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09BFD62926636A2900D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09BFD62A26636A2900D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09BFD62C26636A2900D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09BFD62D26636A2900D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09BFD62F26636A2900D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenTool.app/ScreenTool";
+			};
+			name = Debug;
+		};
+		09BFD63026636A2900D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenTool.app/ScreenTool";
+			};
+			name = Release;
+		};
+		09BFD63226636A2900D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenTool;
+			};
+			name = Debug;
+		};
+		09BFD63326636A2900D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = ScreenToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenTool;
+			};
+			name = Release;
+		};
+		09BFD65826636AA400D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = RecoderSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool.RecoderSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09BFD65926636AA400D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = RecoderSetupUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool.RecoderSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09BFD65B26636AA400D80E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = Recoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool.Recoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09BFD65C26636AA400D80E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MB4N8662CW;
+				INFOPLIST_FILE = Recoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BpeerEI.CarBot.ScreenTool.Recoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09BFD5F726636A2600D80E31 /* Build configuration list for PBXProject "ScreenTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD62926636A2900D80E31 /* Debug */,
+				09BFD62A26636A2900D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BFD62B26636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD62C26636A2900D80E31 /* Debug */,
+				09BFD62D26636A2900D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BFD62E26636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD62F26636A2900D80E31 /* Debug */,
+				09BFD63026636A2900D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BFD63126636A2900D80E31 /* Build configuration list for PBXNativeTarget "ScreenToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD63226636A2900D80E31 /* Debug */,
+				09BFD63326636A2900D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BFD65726636AA400D80E31 /* Build configuration list for PBXNativeTarget "RecoderSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD65826636AA400D80E31 /* Debug */,
+				09BFD65926636AA400D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BFD65A26636AA400D80E31 /* Build configuration list for PBXNativeTarget "Recoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BFD65B26636AA400D80E31 /* Debug */,
+				09BFD65C26636AA400D80E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09BFD5F426636A2600D80E31 /* Project object */;
+}
